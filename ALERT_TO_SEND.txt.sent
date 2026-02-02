@@ -1,0 +1,16 @@
+⚠️ 测试系统监控警报 ⚠️
+
+✅ 监控系统已成功设置！
+
+监控内容包括：
+• Maymay Backend (端口 8000)
+• Heroweb Backend (端口 8001)
+• Redis 服务
+• Nginx 服务
+• 磁盘空间使用率
+• 内存使用率
+
+检查频率: 每 10 分钟
+日志文件: ~/.openclaw/workspace/monitor.log
+
+如果此消息成功发送，说明警报系统工作正常！
