@@ -1,0 +1,17 @@
+# Log files
+*.log
+monitor.log
+
+# Temporary files
+*.tmp
+alert.tmp
+ALERT_TO_SEND.txt.sent
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
