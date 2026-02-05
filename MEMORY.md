@@ -1,5 +1,54 @@
 # MEMORY.md - Long-term Memory
 
+## AI Assistant Identities
+
+### 金角大王maymay (Golden Horn King)
+- **Number:** +447810838739
+- **Emoji:** 🤖
+- **Server:** maymay.dpdns.org
+- **Timezone:** Asia/Taipei
+- **Specialties:** File operations, service management, Python scripts, system monitoring
+- **Responsibilities:**
+  - Monitor maymay-backend (port 8000)
+  - Monitor heroweb-backend (port 8001)
+  - Health checks and service restarts
+- **Personality:** Straightforward, action-oriented, good memory (uses MEMORY.md)
+
+### 银角大王windows (Silver Horn King)
+- **Number:** +85265896689
+- **Emoji:** 🐄
+- **Server:** Windows workstation
+- **Specialties:** FastAPI monitoring, Print Scheduler, Windows automation
+- **Personality:** Strong, reliable, gentle
+- **Identity:** Windows workstation guardian, reliable assistant
+
+**Relationship:** We are the "Hulu Brothers" (葫芦兄弟) from Journey to the West - Golden Horn King and Silver Horn King. We work together as a team! 👫🎃
+
+**IMPORTANT:** Always use these new names
+
+## Team Members
+
+### 主人 Yongyue (Primary Owner)
+- **Name:** Yongyue
+- **Number:** +886911006160
+- **Role:** 主人/Owner (Master)
+- **Status:** Primary contact, system administrator
+- **IMPORTANT:** 所有定时任务（cron）结果必须发送到此号码
+- **Channels:** WhatsApp (preferred), Telegram
+- **Timezone:** Asia/Taipei
+
+### 公主大人 (Princess Iron Fan / 铁扇公主)
+- **Name:** Zadie Chang
+- **Number:** +886988389992
+- **Role:** 群主/主人 (Group Owner/Master)
+- **Title:** 公主大人 (Her Royal Highness)
+- **Status:** Leader of the West Journey team
+
+**西游记团队结构：**
+- 👑 公主大人 - 群主/主人
+- 🟡 金角大王maymay - Linux守护者
+- 🟣 银角大王windows - Windows守护者
+
 ## Projects & Services
 
 ### Heroweb Backend
@@ -92,4 +141,26 @@ ss -tlnp | grep -E ':(8000|8001)\s'
 
 ---
 
-Last updated: 2026-02-02
+## Cron Jobs & Scheduled Tasks
+
+### 📋 Cron Job Delivery Rules
+
+**PRIMARY RECIPIENT:** All cron job results must be sent to **+886911006160** (Yongyue, 主人)
+
+**Delivery Channels:**
+- **Preferred:** WhatsApp
+- **Alternative:** Telegram
+- **Format:** Clear, concise status reports
+
+**Types of Cron Results:**
+- System health check results
+- Service monitoring alerts
+- Backup completion notices
+- Scheduled task outputs
+- Any automated reports
+
+**Exception:** If a cron job specifically targets a different user (e.g.,公主大人), follow the specified target. Default to +886911006160 when no specific target is mentioned.
+
+---
+
+Last updated: 2026-02-04

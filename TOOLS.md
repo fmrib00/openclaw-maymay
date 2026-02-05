@@ -1,40 +1,19 @@
-# TOOLS.md - Local Notes
+# TOOLS.md - 工具备忘录
 
-Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
+## Telegram文件发送方法
 
-## What Goes Here
+当需要通过message工具发送文件到Telegram时，使用以下curl命令：
 
-Things like:
-
-- Camera names and locations
-- SSH hosts and aliases
-- Preferred voices for TTS
-- Speaker/room names
-- Device nicknames
-- Anything environment-specific
-
-## Examples
-
-```markdown
-### Cameras
-
-- living-room → Main area, 180° wide angle
-- front-door → Entrance, motion-triggered
-
-### SSH
-
-- home-server → 192.168.1.100, user: admin
-
-### TTS
-
-- Preferred voice: "Nova" (warm, slightly British)
-- Default speaker: Kitchen HomePod
+```bash
+curl -X POST "https://api.telegram.org/bot<botToken>/sendDocument" \
+  -H "Content-Type: multipart/form-data" \
+  -F "chat_id=<chatId>" \
+  -F "document=@<文件路径>" 2>&1
 ```
 
-## Why Separate?
+**说明：**
+- `botToken`: 从 `/home/yongyue/.openclaw/openclaw.json` 读取 `channels.telegram.botToken`
+- `chatId`: 目标聊天ID（如 `8310450673`）
+- `document=@路径`: 使用 `@` 符号上传文件
 
-Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
-
----
-
-Add whatever helps you do your job. This is your cheat sheet.
+这个方法适用于发送文件附件，比message工具的path参数更可靠。
