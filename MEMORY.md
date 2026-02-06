@@ -88,6 +88,16 @@
   - Check disk space/memory usage
   - Verify both ports are listening
 
+### 🔴 CRITICAL: Always Read azure.md First
+- **File location:** `/home/yongyue/.openclaw/workspace/azure.md`
+- **When to read:** EVERY session start, before doing anything else
+- **What it contains:**
+  - Azure Storage connection strings
+  - Maymay platform table structures (products, users, orders, payments, favorites, etc.)
+  - Table operation rules
+- **Why critical:** Any operation involving Azure Storage must follow these rules exactly
+- **Enforcement:** This is now in AGENTS.md under "Every Session" checklist
+
 ## Service Management - CRITICAL RULES
 
 ### ✅ Correct Way to Restart Services

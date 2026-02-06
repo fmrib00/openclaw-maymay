@@ -7,6 +7,9 @@ monitor.log
 alert.tmp
 ALERT_TO_SEND.txt.sent
 
+# Temporary directory
+temp/
+
 # OS files
 .DS_Store
 Thumbs.db

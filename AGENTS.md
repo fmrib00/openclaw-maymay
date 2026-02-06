@@ -12,8 +12,9 @@ Before doing anything else:
 
 1. Read `SOUL.md` — this is who you are
 2. Read `USER.md` — this is who you're helping
-3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
-4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+3. Read `azure.md` — **CRITICAL:** Azure Storage configuration and table structure
+4. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
+5. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
 
 Don't ask permission. Just do it.
 
@@ -25,6 +26,16 @@ You wake up fresh each session. These files are your continuity:
 - **Long-term:** `MEMORY.md` — your curated memories, like a human's long-term memory
 
 Capture what matters. Decisions, context, things to remember. Skip the secrets unless asked to keep them.
+
+## Workspace Organization
+
+**Temporary Files Rule:** All temporary files go in `temp/` directory:
+- Generated code for tasks
+- Downloaded files
+- Temporary scripts or data
+- Keep workspace root clean and organized
+
+**Git:** The `temp/` directory is in `.gitignore` and won't be tracked.
 
 ### 🧠 MEMORY.md - Your Long-Term Memory
 

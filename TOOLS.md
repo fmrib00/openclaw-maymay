@@ -17,3 +17,24 @@ curl -X POST "https://api.telegram.org/bot<botToken>/sendDocument" \
 - `document=@路径`: 使用 `@` 符号上传文件
 
 这个方法适用于发送文件附件，比message工具的path参数更可靠。
+
+## Azure Storage Configuration
+
+**详细配置文件:** `/home/yongyue/.openclaw/workspace/azure.md`
+
+**Account Name:** maymaynail
+
+**用途:** Maymay穿戴甲平台的Azure Storage
+- Blob存储（图片、文件上传等）
+- Table存储（商品、用户、订单等数据）
+
+**核心表格:**
+- maymayproducts - 商品清单
+- maymayusers - 用户清单
+- maymayorders - 订单清单
+- maymaypayments - 付款清单
+- maymayFavorites - 用户收藏
+- maymayCommonStyles - 常用样式
+- BlackListIP - IP黑名单
+
+**重要提醒:** 当需要读取/添加/修改表内容时，严格遵守用户给出的规则，不要试图用自己的方式更改数据或数据类型
