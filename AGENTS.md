@@ -35,7 +35,12 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - Temporary scripts or data
 - Keep workspace root clean and organized
 
-**Git:** The `temp/` directory is in `.gitignore` and won't be tracked.
+**Credentials Directory:** Sensitive information goes in `credentials/` directory:
+- Connection strings, API keys, tokens
+- NEVER committed to git (in `.gitignore`)
+- Use environment variables in production
+
+**Git:** Both `temp/` and `credentials/` directories are in `.gitignore` and won't be tracked.
 
 ### 🧠 MEMORY.md - Your Long-Term Memory
 

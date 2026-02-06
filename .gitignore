@@ -10,6 +10,9 @@ ALERT_TO_SEND.txt.sent
 # Temporary directory
 temp/
 
+# Credentials (sensitive information)
+credentials/
+
 # OS files
 .DS_Store
 Thumbs.db

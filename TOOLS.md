@@ -22,6 +22,8 @@ curl -X POST "https://api.telegram.org/bot<botToken>/sendDocument" \
 
 **详细配置文件:** `/home/yongyue/.openclaw/workspace/azure.md`
 
+**Connection String:** `credentials/azure-storage.txt` (敏感信息，已加入 .gitignore)
+
 **Account Name:** maymaynail
 
 **用途:** Maymay穿戴甲平台的Azure Storage

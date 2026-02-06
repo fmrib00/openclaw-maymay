@@ -8,13 +8,44 @@
 
 ## Connection String
 
+**⚠️ 安全提示:** Connection string 包含敏感信息（Account Key），不能直接写在代码或提交到 Git。
+
+### 如何获取 Connection String
+
+**从本地文件读取（开发环境）：**
+```bash
+# Connection string 保存在:
+credentials/azure-storage.txt
 ```
-DefaultEndpointsProtocol=https;AccountName=<ACCOUNT_NAME>;AccountKey=<ACCOUNT_KEY>;EndpointSuffix=core.windows.net
+
+**从环境变量读取（生产环境）：**
+```bash
+# 在 .env 文件或系统环境变量中设置:
+AZURE_STORAGE_CONNECTION_STRING="DefaultEndpointsProtocol=https;AccountName=..."
 ```
+
+**在 Python 代码中读取：**
+```python
+import os
+from dotenv import load_dotenv
+
+# 方式1: 从 .env 文件读取
+load_dotenv('/path/to/.env')
+connection_string = os.getenv('AZURE_STORAGE_CONNECTION_STRING')
+
+# 方式2: 直接从文件读取（不推荐生产环境）
+with open('credentials/azure-storage.txt', 'r') as f:
+    content = f.read()
+    connection_string = content.strip().split('\n')[0]
+```
+
+### Account 信息
 
 **Account Name:** maymaynail
 
-**⚠️ 注意:** 完整的connection string包含敏感信息，请从环境变量或安全配置文件中读取，不要直接写在代码或文档中。
+**用途:** Maymay穿戴甲平台的 Azure Storage
+- **Blob Storage** - 图片、文件上传
+- **Table Storage** - 业务数据（商品、用户、订单等）
 
 **用途:** Maymay穿戴甲平台的 Azure Storage
 - **Blob 存储** - 图片、文件上传
